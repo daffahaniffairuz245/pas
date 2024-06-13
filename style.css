@@ -11,6 +11,7 @@
   --clr-green: 144.3 64.4% 49.6%;
   --clr-blue: 214.5 100% 53.9%;
   --clr-white: 0 0% 100%;
+  --primaryTextColor: rgb(80, 198, 198);
 
   /* font-size */
   --fs-bf-194: 12.3vw;
@@ -180,7 +181,7 @@ body {
 }
 
 .text-white {
-  background-color: hsl(var(--clr-white));
+  /* background-color: hsl(var(--clr-white)); */
 }
 
 .text-yellow {
@@ -578,20 +579,86 @@ body {
   box-shadow: 3px 2px 37px -6px rgba(225, 225, 255, 0.69);
 }
 
-.img {
+/* .img {
   width: 100%;
   display: flex;
+  margin-bottom: 100px;
   justify-items: center;
   flex-direction: column;
   justify-content: center;
+} */
+/* .img {
+  height: 400px;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+} */
+.img {
+  height: 400px;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -80px; /* tambahkan baris ini */
 }
-
-.cart bold-800 flex {}
-
+.img-gam{
+  width: 370px;
+  height: 300px;
+  display: block;
+  position: relative;
+  top: -80px; /* tambahkan baris ini */
+}
+.img-h{
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: relative;
+  top: -80px; /* tambahkan baris ini */
+}
+.img-man2{
+  width: 450px;
+  height: 400px;
+  display: block;
+  position: relative;
+  top: -80px; /* tambahkan baris ini */
+}
+.img-w{
+  width: 450px;
+  height: 400px;
+  display: block;
+  position: relative;
+  top: -80px; /* tambahkan baris ini */
+}
+.img-laptop{
+  width: 450px;
+  height: 400px;
+  display: block;
+  position: relative;
+  margin-left: 0rem;
+  top: -130px; /* tambahkan baris ini */
+}
+/* .img-mus{
+  width: 400px;
+  justify-content: center;
+  height: 400px;
+  display: block;
+  position: relative;
+} */
+.img-mus {
+  height: 300px;
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: -100px; /* tambahkan baris ini */
+}
 .shopping flex {
   display: none;
 }
-
+.h3{
+  font-family: var(--font-poppins);
+}
 .large-btn {
   border: 0;
   padding: 0.7rem 1rem;
@@ -603,8 +670,357 @@ body {
 .hero-section>img {
   margin-top: 11rem;
   margin-left: 2rem;
+  /* margin-bottom: 30px; */
+  display: flex;
+  /* justify-items: center; */
 }
 
 .hero-inner {
-  --flex: ;
+  justify-content: space-between;
+  align-items: center;
+  --flex-gap: 2rem;
+  margin-top: -3.5rem;
+  padding-bottom: 4rem;
+}
+.hero-inner{
+  display: none;
+}
+
+.div{
+  /* margin: 0 24px; */
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 14px;
+ margin-left: 50px;
+}
+.div1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 14px;
+}
+.hero-section{
+  width: 93vh;
+  /* margin-inline: auto; */
+  padding-inline: 2rem;
+}
+.hero-section:nth-child(1) {
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: hsl(var(--clr-gray));
+  border-radius: 2rem;
+  padding-top: 5rem;
+  /* transition: all 2s;
+  &:hover {
+      scale: 1.11;
+  } */
+}
+.hero-section:nth-child(2) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: hsl(var(--clr-gray));
+  /* background-color: black; */
+  border-radius: 2rem;
+  padding-top: 5rem;
+  /* transition: all 2s;
+  &:hover {
+      scale: 1.11;
+  } */
+}
+.hero-section:nth-child(3) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+  transition: all 2s;
+  /* &:hover {
+      scale: 1.11;
+  } */
+}
+.hero-section:nth-child(4) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+  /* transition: all 2s;
+  &:hover {
+      scale: 1.11;
+  } */
+}
+.hero-section:nth-child(5) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+  transition: all 2s;
+  /* &:hover {
+      scale: 1.11;
+  } */
+}
+.hero-section:nth-child(6) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(7) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(8) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(9) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(10) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(11) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(12) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(13) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(14) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.hero-section:nth-child(15) {
+  /* height: 450px;*/
+  height: 700px;
+  width: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  background-color: orange;
+  border-radius: 2rem;
+  padding-top: 5rem;
+}
+.img{
+  height: 400px;
+  width: 500px;
+  justify-items: center;
+  margin-top: 100%;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  width: 200px;
+  background: white;
+  /* border: 1.5px solid #f1f1f1; */
+  cursor: pointer;
+  margin-left: -10px;
+  gap: 4px;
+  transition: .2s ease-in-out;
+}
+.btn {
+  background-color: black;
+  border-radius: 5rem;
+  color:var(--primaryTextColor);
+  &:hover{
+ background-color: whitesmoke; }
+}
+btn {
+  position: relative;
+  top: -53px; /* atau bottom: 10px; */
+  position: relative;
+  margin-left: -4px;
+  left: -10px; /* atau right: 10px; */
+}
+
+.btn :hover {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.judul {
+  position: relative;
+  top: -92px; /* atau bottom: 10px; */
+}
+.judull{
+  position: relative;
+    top: -74px;
+}
+.p {
+  position: relative;
+  top: -88px; 
+  /* margin-right: -88px; */
+  gap: 4px;
+  /* font-family: var(--font-poppins); */
+}
+.pp{
+  font-family: var(--font-montserrat);
+}
+.p-lorem {
+  position: relative;
+top: -60px;
+}
+pl {
+  position: relative;
+  bottom: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mengatur semua gambar dalam hero-section agar responsif */
+  .div {
+    width: 100%; /* Membuat gambar memenuhi lebar container */
+    height: auto; /* Menjaga rasio aspek gambar */
+    position: relative; /* Menghilangkan positioning khusus jika ada */
+    top: 0; /* Menghilangkan offset atas jika ada */
+    margin-left: auto;
+
+  }
+
+  /* Jika ada kelas khusus untuk gambar tertentu, atur di sini */
+  .img, .img-gam, .img-h, .img-man2, .img-w, .img-laptop, .img-mus {
+    width: 100%; /* Membuat gambar-gambar ini responsif */
+    height: auto; /* Menjaga rasio aspek */
+    position: relative; /* Menghilangkan positioning khusus */
+    top: -93px; 
+    margin: 0 auto; /* Menengahkan gambar */
+  }
+  .coba {
+    position: relative;
+    top: 30px;
+  }
+  .img-h {
+    width: 70%; /* atau 50%, 30%, dll */
+    height: auto;
+    position: relative;
+    top: -90px; /* atau -20px, -30px, dll */
+  }
+
+  .img-laptop {
+    position: relative;
+    top: -90px; /* atau -20px, -30px, dll */
+  }
+  .img-gam {
+    position: relative;
+    width: 70%;
+    top: -88px; /* atau -20px, -30px, dll */
+  }
+  .img-w {
+    position: relative;
+    top: -90px; /* atau -20px, -30px, dll */
+  }
+  .pl {
+    position: relative;
+    top: -60px;
+  }
+ 
+  /* .op{
+    position: relative;
+    top: -90px;
+  } */
+  /* .btn{
+    position: relative;
+    top: -53px;
+  } */
 }

@@ -694,7 +694,11 @@ body {
   display: flex;
   gap: 14px;
  margin-left: 50px;
+ 
 }
+
+
+
 .div1{
   width: 100%;
   height: 100%;
@@ -953,7 +957,7 @@ btn {
   top: -88px; 
   /* margin-right: -88px; */
   gap: 4px;
-  /* font-family: var(--font-poppins); */
+   font-family: var(--font-poppins); 
 }
 .pp{
   font-family: var(--font-montserrat);
@@ -975,8 +979,19 @@ pl {
     position: relative; /* Menghilangkan positioning khusus jika ada */
     top: 0; /* Menghilangkan offset atas jika ada */
     margin-left: auto;
-
+    justify-content: center;
+    justify-items: center;
   }
+/* .uil uil-times-circle{
+  position: relative;
+  left: -100px;
+} */
+  .hero-linner {
+  display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
 
   /* Jika ada kelas khusus untuk gambar tertentu, atur di sini */
   .img, .img-gam, .img-h, .img-man2, .img-w, .img-laptop, .img-mus {
